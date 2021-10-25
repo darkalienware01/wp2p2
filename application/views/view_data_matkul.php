@@ -24,7 +24,7 @@
 		<th><?= $sks;?></th>
 	</tr>
 	<tr>
-		<th colspan="3"> <a href=" <?>
+		<th colspan="3"> <a href="<?= base_url();?>matkul"> kembali </a>
 	</tr>
 </table>
 </center>

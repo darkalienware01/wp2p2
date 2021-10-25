@@ -12,12 +12,14 @@
 	<tr>
 		<th>Kode Matkul</th>
 		<th>:</th>
-		<th><input type="text" name="kode" placeholder="Input Kode Matkul" maxlength="10"></th>
+		<th><input type="text" name="kode" placeholder="Input Kode Matkul">
+		<?= form_error('kode','<small style="color:red;">','</small>'); ?></th>
 	</tr>
 	<tr>
 		<th>Nama Matkul</th>
 		<th>:</th>
-		<th><input type="text" name="nama" placeholder="Input Nama Matkul" maxlength="10"></th>
+		<th><input type="text" name="nama" placeholder="Input Nama Matkul">
+		<?= form_error('nama','<small style="color:red;">','</small>'); ?></th>
 	</tr>
 	<tr>
 		<th>Jumlah SKS</th>
@@ -27,7 +29,8 @@
 		<option value="2">2</option>
 		<option value="3">3</option>
 		<option value="4">4</option>
-		</th>
+		</select>
+		<?= form_error('sks','<small style="color:red;">','</small>'); ?></th>
 	</tr>
 	<tr>
 		<th colspan="3"> <input type="submit" value="Submit"></th>
