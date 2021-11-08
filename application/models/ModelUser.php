@@ -5,15 +5,15 @@ class ModelUser extends CI_Model
     public function simpanData($data = null)
     {
         $this
-            ->db->insert('user', $data);
+            ->db->insert('tbl_user', $data);
     }
     public function cekData($where = null)
     {
-        return $this ->db->get_where('user', $where);
+        return $this ->db->get_where('tbl_user', $where);
     }
     public function getUserWhere($where = null)
     {
-        return $this->db->get_where('user', $where);
+        return $this->db->get_where('tbl_user', $where);
     }
     public function cekUserAccess($where = null)
     {
@@ -25,7 +25,7 @@ class ModelUser extends CI_Model
     public function getUserLimit()
     {
         $this->db->select('*');
-        $this->db->from('user');
+        $this->db->from('tbl_user');
         $this->db->limit(10, 0);
         return $this->db->get();
     }
