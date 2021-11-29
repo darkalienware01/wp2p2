@@ -1,12 +1,12 @@
+
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebardark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
   <!-- Sidebar - Brand -->
-  <a class="sidebar-brand d-flex align-items-center
-justify-content-center" href="index.html">
+  <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/">
     <div class="sidebar-brand-icon rotate-n-15">
       <i class="fas fa-book"></i>
     </div>
-    <div class="sidebar-brand-text mx-3">Pustaka Booking</div>
+    <div class="sidebar-brand-text mx-3">Pustaka Booking"</div>
   </a>
   <!-- Divider -->
   <hr class="sidebar-divider">
@@ -17,17 +17,13 @@ justify-content-center" href="index.html">
   <li class="nav-item active">
     <!-- Nav Item - Dashboard -->
   <li class="nav-item">
-    <a class="nav-link pb-0" href="
-					<?=
-base_url('buku'); ?>">
+    <a class="nav-link pb-0" href="<?= base_url('buku'); ?>">
       <i class="fa fa-fw fa book"></i>
       <span>Data Buku</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link pb-0" href="
-					<?=
-base_url('user/anggota'); ?>">
+    <a class="nav-link pb-0" href="<?= base_url('user/anggota'); ?>">
       <i class="fa fa-fw fa book"></i>
       <span>Data Anggota</span>
     </a>

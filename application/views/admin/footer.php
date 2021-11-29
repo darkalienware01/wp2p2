@@ -1,58 +1,63 @@
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
-  <div class="container my-auto">
-    <div class="copyright text-center my-auto">
-      <span>Copyright &copy; Web Programming Univ. BSI with Bootstrap SB Admin 2 <?= date('Y'); ?> </span>
-    </div>
-  </div>
+   <div class="container my-auto">
+      <div class="copyright text-center my-auto">
+         <span>Copyright &copy; Web Programming Univ. BSI with
+         Bootstrap SB Admin 2 <?= date('Y'); ?></span>
+      </div>
+   </div>
 </footer>
-<!-- End of Footer-->
-<!-- End of Content Wrapper -->undefined</div>undefined
-<!-- End of Page Wrapper -->undefined
-<!-- Scroll to Top Button-->undefined<a class="scroll-to-top rounded" href="#page-top">
-  <i class="fas fa-angle-up"></i>undefined</a>undefined
-<!-- Logout Modal-->undefined<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Yakin mau keluar?</h5>
-        <button class="close" type="button" datadismiss="modal" aria-label="Close">
-          <span aria-hidden="true">×</span>
-        </button>
+<!-- End of Footer -->
+</div>
+<!-- End of Content Wrapper -->
+</div>
+<!-- End of Page Wrapper -->
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+<i class="fas fa-angle-up"></i>
+</a>
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
+   aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Yakin
+               mau keluar?
+            </h5>
+            <button class="close" type="button" datadismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+            </button>
+         </div>
+         <div class="modal-body">Pilih "Logout" di bawah jika
+            kamu yakin sudah selesai.
+         </div>
+         <div class="modal-footer">
+            <button class="btn btn-secondary" type="button"
+               data-dismiss="modal">Cancel</button>
+            <a class="btn btn-primary" href="<?= base_url('Auth/logout'); ?>">Logout</a>
+         </div>
       </div>
-      <div class="modal-body">Pilih "Logout" di bawah jika kamu yakin sudah selesai.</div>
-      <div class="modal-footer">
-        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-        <a class="btn btn-primary" href="
-				<?=
-base_url('autentifikasi/logout'); ?>">Logout </a>
-      </div>
-    </div>
-  </div>undefined
-</div>undefined
-<!-- Bootstrap core JavaScript-->undefined<script src="
-<?= base_url('assets/');
-?>vendor/jquery/jquery.min.js">
-  undefined
-</script>undefined<script src="
-<?= base_url('assets/');
-?>vendor/bootstrap/js/bootstrap.bundle.min.js">
-  undefined
-</script>undefined
-<!-- Core plugin JavaScript-->undefined<script src="
-<?= base_url('assets/'); ?>vendor/jqueryeasing/jquery.easing.min.js">
-  undefined
-</script>undefined
-<!-- Custom scripts for all pages-->undefined<script src="
-<?= base_url('assets/'); ?>js/sb-admin2.min.js">
-  undefined
-</script>undefined<script>
-  $('.custom-file-input').on('change', function() {
-    let fileName = $(this).val().split('\\').pop();
-    $(this).next('.custom-filelabel').addClass("selected").html(fileName);
-  });
-  $(document).ready(function() {
-    $("#table-datatable").dataTable();
-  });
-  $('.alert-message').alert().delay(3500).slideUp('slow');
-</script>undefined</body>undefined</html>
+   </div>
+</div>
+<!-- Bootstrap core JavaScript-->
+<script src="<?= base_url('assets/');?>vendor/jquery/jquery.min.js"></script>
+<script src="<?= base_url('assets/');?>vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="<?= base_url('assets/'); ?>vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for all pages-->
+<script type="text/javascript" src="<?= base_url('assets/vendor/'); ?>datatables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="<?= base_url('assets/vendor/'); ?>datatables/dataTables.bootstrap4.min.js"></script>
+<script src="<?= base_url('assets/'); ?>js/sb-admin-2.min.js"></script>
+<script>
+   $('.custom-file-input').on('change', function() {
+   let fileName = $(this).val().split('\\').pop();
+   $(this).next('.custom-filelabel').addClass("selected").html(fileName);
+   });
+   $(document).ready(function() {
+   $("#table-datatable").dataTable();
+   });
+   $('.alert-message').alert().delay(3500).slideUp('slow');
+</script>
+</body>
+</html>
